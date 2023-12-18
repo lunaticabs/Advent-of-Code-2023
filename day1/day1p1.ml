@@ -45,7 +45,6 @@ let rec sum list_of_listed_str =
   match list_of_listed_str with
   | [] -> 0
   | hd :: tl -> 
-    let current_sum = hd |> num_filter |> list_of_char_to_int |> get_first_and_last |> calculate in
-    current_sum + sum tl
+    (hd |> num_filter |> list_of_char_to_int |> get_first_and_last |> calculate) + sum tl
 
 let _ = () |> read_lines |> gets |> sum |> print_int
