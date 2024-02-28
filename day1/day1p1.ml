@@ -48,3 +48,5 @@ let rec sum list_of_listed_str =
     (hd |> num_filter |> list_of_char_to_int |> get_first_and_last |> calculate) + sum tl
 
 let _ = () |> read_lines |> gets |> sum |> print_int
+
+(*test*)
